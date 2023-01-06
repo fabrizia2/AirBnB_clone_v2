@@ -8,7 +8,7 @@ from models.place import Place
 
 
 class User(BaseModel, Base):
-    """This class defines a user by various attributes"""
+    """defines a user by various attributes"""
     __tablename__ = "users"
     email = Column(String(128), nullable=False)
     password = Column(String(128), nullable=False)
