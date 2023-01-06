@@ -1,4 +1,4 @@
--- a script that creates MySQL server for the database hbnb_dev_db
+-- Script to create a MySQL server with the database hbnb_dev_db.
 CREATE DATABASE IF NOT EXISTS hbnb_dev_db;
 CREATE USER IF NOT EXISTS 'hbnb_dev'@'localhost';
 SET PASSWORD FOR 'hbnb_dev'@'localhost' = 'hbnb_dev_pwd';
