@@ -48,7 +48,7 @@ file { '/data/web_static/shared':
 
 file { '/data/web_static/releases/test/index.html':
   ensure  => 'present',
-  content => "Hello There! Puppet\n"
+  content => "Renish sayshello! Puppet\n"
 } ->
 
 file { '/data/web_static/current':
