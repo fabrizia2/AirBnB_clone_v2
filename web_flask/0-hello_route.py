@@ -3,8 +3,6 @@
 """
 starts a flask web application
 """
-
-"""import lib"""
 from flask import Flask
 
 """create an application object"""
@@ -13,6 +11,7 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def hello():
+    """returns Hello HBNB"""
     return "Hello HBNB!"
 
 
