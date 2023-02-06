@@ -13,14 +13,14 @@ app = Flask(__name__)
 def all_states():
     """Display all states"""
     states = list(storage.all(State).values())
-    return render_template("9-states.html", states=states)
+    return render_template("9-states.html", state=states)
 
 
 @app.route("/states/<id>", strict_slashes=False)
 def one_state(id):
     """Display one state"""
     states = list(storage.all(State).values())
-    return render_template("9-states.html", states=states, id=id)
+    return render_template("9-states.html", state=states, id=id)
 
 
 @app.teardown_appcontext
