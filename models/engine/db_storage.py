@@ -10,6 +10,8 @@ from models.review import Review
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker, scoped_session
 import os
+from os import getenv
+import MySQLdb
 
 
 user = os.getenv('HBNB_MYSQL_USER')
@@ -28,7 +30,7 @@ class DBStorage:
 
     def __init__(self):
         """Contructor for the class DBStorage"""
-         """Attribute Instantiation for DBStorage Object"""
+        """Attribute Instantiation for DBStorage Object"""
         HBNB_MYSQL_USER = getenv('HBNB_MYSQL_USER')
         HBNB_MYSQL_PWD = getenv('HBNB_MYSQL_PWD')
         HBNB_MYSQL_HOST = getenv('HBNB_MYSQL_HOST')
